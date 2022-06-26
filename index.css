@@ -1,0 +1,173 @@
+:root {
+    --bg-color: #58894c2c;
+    --bg-color-2: #58894c99;
+    --hover-color: #58894c7d;
+    --hover-font-size: 1.2em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url(/images/pexels-scott-webb-305821.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: flex-end;
+}
+
+nav a,
+#cdc-icon {
+    text-decoration: none;
+    padding: 14px 16px;
+    color: #58894c;
+    font-family: "lucida sans";
+    font-weight: bold;
+}
+
+nav a:hover,
+#cdc-icon:hover,
+#cdc-content a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+    color: black;
+}
+
+#cdc-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: min-content;
+    right: 10px;
+}
+
+#cdc-content a {
+    display: block;
+    font-size: small;
+}
+
+#cdc-content a:hover {
+    background-color: rgba(187, 169, 169, 0.66);
+    border-radius: 1mm;
+}
+
+#cdc:hover #cdc-content {
+    display: block;
+}
+
+#hamburger-icon {
+    display: none;
+}
+
+.container {
+    width: 60%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.calculator-container {
+    display: flex;
+    background-color: #4c8989;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+    border-radius: 4mm;
+    margin: 120px auto;
+    align-items: center;
+}
+
+#input-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#input-field {
+    width: 100%;
+    height: 70px;
+    border: none;
+    border-radius: 2mm;
+    padding: 10px;
+}
+
+#input-field[placeholder] {
+    text-align: right;
+    font-size: 30px;
+}
+
+.button-container {
+    display: flex;
+    padding: 10px;
+    margin-top: 5px;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+.button-container-last {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+}
+
+.buttons,
+.special_buttons,
+.number_buttons {
+    width: 18%;
+    height: 42px;
+    border-radius: 1mm;
+    border: none;
+    background-color: aliceblue;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.buttons:hover,
+.special_buttons:hover,
+.number_buttons:hover {
+    background-color: darkgrey;
+    transform: translateY(-1px);
+}
+
+.buttons:active,
+.special_buttons:active,
+.number_buttons:active {
+    transform: translateZ(2px);
+}
+
+#clear_button {
+    background-color: red;
+}
+
+#clear_button:hover {
+    background-color: rgba(88, 185, 255, 0.621);
+}
+
+#backspace {
+    background-color: rgb(180, 180, 4);
+}
+
+#backspace:hover {
+    background-color: rgba(88, 185, 255, 0.621);
+}
+
+#equals_sign {
+    background-color: orange;
+}
+
+#equals_sign:hover {
+    background-color: rgba(88, 185, 255, 0.621);
+}

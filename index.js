@@ -8,21 +8,19 @@ specialButtons = Array.from(specialButtons);
 
 // input for numbers
 for (let number of numbers) {
-  function input() {
+  number.addEventListener("click", () => {
     result += number.value;
     document.getElementById("input-field").innerText = parseFloat(result);
-  }
-  number.addEventListener("click", input);
+  });
 }
 
 // input for special buttons
 for (let buttons of specialButtons) {
-  function inputSpecialButtons() {
+  buttons.addEventListener("click", () => {
     result += buttons.value;
     store += result;
     result = "";
-  }
-  buttons.addEventListener("click", inputSpecialButtons);
+  });
 }
 
 // equals button

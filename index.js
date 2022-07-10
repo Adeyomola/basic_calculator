@@ -2,12 +2,14 @@ let store = ""; //stores the inputs
 let result = ""; // clone of the output that is evaluated by the equals button
 let numbers = document.querySelectorAll(".number_buttons");
 let specialButtons = document.querySelectorAll(".buttons");
+numbers = Array.from(numbers);
+specialButtons = Array.from(specialButtons);
 // equals();
 
 // input for numbers
 for (let number of numbers) {
   function input() {
-    result += number.innerText;
+    result += number.value;
     document.getElementById("input-field").innerText = parseFloat(result);
   }
   number.addEventListener("click", input);

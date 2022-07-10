@@ -7,7 +7,7 @@ let specialButtons = document.querySelectorAll(".buttons");
 // input for numbers
 for (let number of numbers) {
   function input() {
-    result += number.value;
+    result += number.innerText;
     document.getElementById("input-field").innerText = parseFloat(result);
   }
   number.addEventListener("click", input);

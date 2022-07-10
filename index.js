@@ -19,6 +19,8 @@ for (let buttons of specialButtons) {
     result += buttons.value;
     store += result;
     result = "";
+    console.log(result);
+    console.log(store);
   }
   buttons.addEventListener("click", inputSpecialButtons);
 }
@@ -27,8 +29,8 @@ for (let buttons of specialButtons) {
 function equals() {
   document.getElementById("equals_sign").onclick = () => {
     document.getElementById("input-field").value = eval(store + result);
+    result = eval(store + result);
     store = "";
-    result = "";
   };
 }
 equals();

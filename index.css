@@ -42,6 +42,7 @@ body {
     font-size: 40px;
     background-color: black;
     color: white;
+    outline: none;
 }
 
 .button-container {
@@ -57,7 +58,7 @@ body {
 .button-container-last {
     display: flex;
     justify-content: center;
-    padding: 0 2px 3px 2px;
+    padding: 0 2px 2px 2px;
     width: 100%;
 }
 
@@ -73,7 +74,9 @@ body {
     font-family: monospace;
     font-size: 20px;
 }
-
+img {
+    filter: invert(100%);
+}
 .buttons:hover,
 .special_buttons:hover,
 .number_buttons:hover {

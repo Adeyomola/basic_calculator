@@ -13,42 +13,44 @@
 <body>
     <main class="container">
         <div class="calculator-container">
-            <div id="input-container"><input type="text" name="" id="input-field" placeholder="0"></div>
+            <div id="input-container"><input type="text" name="" id="input-field" placeholder="0" readonly></div>
             <div class="button-container">
-                <input type="button" value="AC" class="special_buttons" id="clear_button">
-                <input type="button" value="C" class="special_buttons" id="backspace">
-                <input type="button" value="0" class="number_buttons" id="0">
-                <input type="button" value="1" class="number_buttons" id="1">
+                <button value="0" class="number_buttons" id="0">0</button>
+                <button value="1" class="number_buttons" id="1">1</button>
+                <button value="2" class="number_buttons" id="2">2</button>
+                <button value="AC" class="special_buttons" id="clear_button">AC</button>
+
             </div>
             <div class="button-container">
-                <input type="button" value="2" class="number_buttons" id="2">
-                <input type="button" value="3" class="number_buttons" id="3">
-                <input type="button" value="4" class="number_buttons" id="4">
-                <input type="button" value="5" class="number_buttons" id="5">
+                <button value="3" class="number_buttons" id="3">3</button>
+                <button value="4" class="number_buttons" id="4">4</button>
+                <button value="5" class="number_buttons" id="5">5</button>
+                <button value="C" class="special_buttons" id="backspace"><img src="./backspace-svgrepo-com.svg"
+                        alt="backspace" height="25"></button>
             </div>
             <div class="button-container">
-                <input type="button" value="6" class="number_buttons" id="6">
-                <input type="button" value="7" class="number_buttons" id="7">
-                <input type="button" value="8" class="number_buttons" id="8">
-                <input type="button" value="9" class="number_buttons" id="9">
+                <button value="6" class="number_buttons" id="6">6</button>
+                <button value="7" class="number_buttons" id="7">7</button>
+                <button value="8" class="number_buttons" id="8">8</button>
+                <button value="9" class="number_buttons" id="9">9</button>
             </div>
             <div class="button-container">
-                <input type="button" value="+" class="buttons">
-                <input type="button" value="." class="number_buttons">
+                <button value="+" class="buttons">+</button>
+                <button value="." class="number_buttons">.</button>
                 <button value="**2" class="buttons">x²</button>
                 <button value="-" class="special_buttons" id="negation">±</button>
             </div>
             <div class="button-container">
-                <input type="button" value="-" class="buttons">
+                <button value="-" class="buttons">-</button>
                 <button value="/100" class="buttons">%</button>
                 <button value="" class="special_buttons" id="square_root">&#8730</button>
                 <button value="**-1" class="buttons">x&#8315&#185</button>
             </div>
             <div class="button-container-last">
                 <button value="**" class="buttons">^</button>
-                <input type="button" value="/" class="buttons">
-                <input type="button" value="*" class="buttons">
-                <input type="button" value="=" class="special_buttons" id="equals_sign">
+                <button value="/" class="buttons">/</button>
+                <button value="*" class="buttons">*</button>
+                <button value="=" class="special_buttons" id="equals_sign">=</button>
             </div>
         </div>
     </main>

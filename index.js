@@ -1,6 +1,4 @@
 const CalculatorScreen = document.getElementById("input-field");
-CalculatorScreen.style.overflow = "visible";
-
 let store = ""; //stores the inputs
 let result = ""; // clone of the output that is evaluated by the equals button
 // let extraStore = ""; // stores the value of the eval() in equals()

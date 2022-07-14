@@ -7,6 +7,7 @@ let specialButtons = document.querySelectorAll(".buttons");
 numbers = Array.from(numbers);
 specialButtons = Array.from(specialButtons);
 
+
 for (let number of numbers) {
   // input for numbers
   number.addEventListener("click", () => {
@@ -39,8 +40,6 @@ for (let buttons of specialButtons) {
       result += e.key;
       store += result;
       result = "";
-      console.log(result);
-      console.log(store);
     }
   });
 }
